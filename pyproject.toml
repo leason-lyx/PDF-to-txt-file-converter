@@ -1,0 +1,9 @@
+[project]
+name = "pdf-to-text"
+version = "0.1.0"
+description = "PDF文件内容提取工具"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pypdf>=4.0.0",
+]
