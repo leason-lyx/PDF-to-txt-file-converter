@@ -25,16 +25,30 @@
     ```
 
 2. **安装依赖**
-    本项目使用 [pypdf](https://pypi.org/project/pypdf/) 库。您可以通过 `pip` 进行安装：
+
+    本项目使用 [pypdf](https://pypi.org/project/pypdf/) 库来处理PDF文件。
+
+    **使用 uv 管理依赖 (推荐)**
 
     ```bash
-    pip install -r requirements.txt
+    # 创建并激活虚拟环境
+    uv venv
+    
+    # 在 Windows PowerShell 中激活虚拟环境
+    .venv\Scripts\Activate.ps1
+    
+    # 安装项目依赖
+    uv pip install -r requirements.txt
     ```
 
-    或者直接安装:
+    **或者使用传统的 pip 方式**
 
     ```bash
-    pip install "pypdf>=4.0.0"
+    # 安装依赖
+    pip install pypdf>=4.0.0
+    
+    # 或者使用 requirements.txt
+    pip install -r requirements.txt
     ```
 
 ## 🚀 使用方法
@@ -69,7 +83,3 @@ python pdf_to_text.py ./my_pdfs ./output_texts
 ```
 
 如果 `output_texts` 文件夹不存在，程序会自动创建它。
-
-## 📄 许可证
-
-本项目采用 [MIT License](LICENSE) 授权。

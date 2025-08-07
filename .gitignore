@@ -12,8 +12,12 @@ wheels/
 # Project specific
 test_pdfs/
 output_texts/
-*.txt
 *.pdf
+
+# Exclude text output files but keep requirements.txt
+text/
+*.txt
+!requirements.txt
 
 # IDE
 .vscode/
